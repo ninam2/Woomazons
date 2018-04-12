@@ -23,7 +23,6 @@ $(document).ready(function () {
 
 
     $( "#pension-nav" ).click(function() {
-        console.log("lalal");
         $( "pension-nav" ).addClass("caption");
         $( "#text-heading" ).text("caption");
         $( "#text-content" ).text("active");
@@ -31,16 +30,24 @@ $(document).ready(function () {
     });
 
     $( "#dreams-nav" ).click(function() {
-        console.log("lalal");
         $( "#text-heading" ).addClass("caption2");
         $( "#text-content" ).text("text2");
 
     });
 
     $( "#lifestyle-nav" ).click(function() {
-        console.log("lalal");
         $( "#text-heading" ).addClass("caption3");
         $( "#text-content" ).text("text3");
+
+    });
+    $( "button" ).click(function() {
+        $( ".active" ).removeClass( "active" )
+        $( this ).addClass("active");
+
+    });
+
+    $( "#buttonSubmit" ).click(function() {
+        $( ".masthead").css("display","active");
 
     });
 });

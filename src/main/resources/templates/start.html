@@ -41,29 +41,6 @@
                     <h2>What's your income?</h2>
                 </div>
 
-                <form class="w3-container">
-
-                    <label for="income" class="col-sm-2 control-label">Income</label>
-                    <div class="col-sm-10 input">
-                        <input type="text" class="form-control " id="income" placeholder="Enter your income">
-                    </div>
-
-                    <label for="period" class="col-sm-2 control-label">Income per</label>
-                    <div class="col-sm-10 input">
-                        <select id="period" size="2">
-                            <option selected value="true">month</option>
-                            <option value="false">year</option>
-                        </select>
-                    </div>
-
-                    <label for="size" class="col-sm-2 control-label">Household Size</label>
-                    <div class="col-sm-10 input">
-                        <input type="text" class="form-control " id="size" placeholder="Enter your number of family members">
-                    </div>
-
-                    <a class="btn btn-large btn-success createSubmit" href="#">Check your data</a>
-
-                </form>
 
                 <div class="w3-bar w3-black">
                     <button class="w3-bar-item w3-button" onclick="openPerson('Single')">Single</button>
@@ -73,7 +50,7 @@
 
                 <div id="Single" class="w3-container w3-display-container person">
                     <span onclick="this.parentElement.style.display='none'"
-                          class="w3-button w3-large w3-display-topright">&times;</span>
+                           lass="w3-button w3-large w3-display-topright" float-right>&times;</span>
                     <h5>Single</h5>
                     <p>Please choose your options</p>
                     <div class="radio float-left">
@@ -81,33 +58,54 @@
                         <input type="radio" name="state" value="yp">Young Professional<br>
                         <input type="radio" name="state" value="ep">Skilled Professional
                     </div>
-                    <div class="person image float-right">
+                    <div class="person-image image">
                         <img src="../img/single.png"/>
                     </div>
                 </div>
 
                 <div id="Couple" class="w3-container w3-display-container person" style="display:none">
-                    <span onclick="this.parentElement.style.display='none'"
-                          class="w3-button w3-large w3-display-topright">&times;</span>
+
                     <h5>Couple</h5>
                     <p>Please choose your options</p>
                 </div>
 
                 <div id="Mom" class="w3-container w3-display-container person" style="display:none">
-                    <span onclick="this.parentElement.style.display='none'"
-                          class="w3-button w3-large w3-display-topright">&times;</span>
                     <h5>Mom</h5>
                     <p>Please choose your options</p>
                 </div>
+                <form class="w3-container">
 
-            </div>
+                <label for="income" class="col-sm-2 control-label">Income</label>
+                <div class="col-sm-10 input">
+                    <input type="text" class="form-control " id="income" placeholder="Enter your income">
+                </div>
+
+                <label for="period" class="col-sm-2 control-label">Income per</label>
+                <div class="col-sm-10 input">
+                    <select id="period" size="2">
+                        <option selected value="true">month</option>
+                        <option value="false">year</option>
+                    </select>
+                </div>
+
+                <label for="size" class="col-sm-2 control-label">Household Size</label>
+                <div class="col-sm-10 input">
+                    <input type="text" class="form-control " id="size" placeholder="Enter your number of family members">
+                </div>
+
+                <a class="btn btn-large btn-success createSubmit" href="#">Check your data</a>
+                <a class="createSubmit" id="buttonSubmit" href="#">Check your data</a>
+
+            </form>
         </div>
+        </div>
+
 
         <hr>
     </div>
 </div><!-- /.navbar -->
 
-<hr>
+<img src="../img/woomazones.jpg" alt="Logo"  width="100%">
 
 <div class="masthead">
     <h3 class="muted">Project name</h3>
@@ -122,6 +120,34 @@
     <div class="container">
         <h2 id="text-heading"></h2>
         <p id="text-content"></p>
+
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Pension</th>
+                <th>Dreams</th>
+                <th>Lifestyle</th>
+                <th>Basic Needs</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 
     <div class="footer">
