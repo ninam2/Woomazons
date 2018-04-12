@@ -19,15 +19,29 @@ $(document).ready(function () {
                 'Content-Type': 'application/json'
             }});
 
-     /*   $.post("calc",
-            {
-                "income":income,
-                "size": size,
-                "monthly": monthly
-            },
-            function (data, status) {
-                alert("Data: " + data + "\nStatus: " + status);
-            });*/
+    });
+
+
+    $( "#pension-nav" ).click(function() {
+        console.log("lalal");
+        $( "pension-nav" ).addClass("caption");
+        $( "#text-heading" ).text("caption");
+        $( "#text-content" ).text("active");
+
+    });
+
+    $( "#dreams-nav" ).click(function() {
+        console.log("lalal");
+        $( "#text-heading" ).addClass("caption2");
+        $( "#text-content" ).text("text2");
+
+    });
+
+    $( "#lifestyle-nav" ).click(function() {
+        console.log("lalal");
+        $( "#text-heading" ).addClass("caption3");
+        $( "#text-content" ).text("text3");
+
     });
 });
 

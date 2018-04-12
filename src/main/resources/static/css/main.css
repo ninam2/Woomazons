@@ -70,3 +70,9 @@ svg {
 .container{
     background-image: url("../img/picture1.jpg");
 }*/
+
+
+.footer{
+    border-top-style: outset;
+}
+
