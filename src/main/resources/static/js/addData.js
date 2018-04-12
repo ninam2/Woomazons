@@ -8,7 +8,7 @@ $(document).ready(function () {
         var monthly = document.getElementById("monthly").value;
 
         var parameter = JSON.stringify({income:income, size:size, monthly:monthly})
-        $( ".masthead").css("display","active");
+        $( ".masthead" ).removeClass( "masthead-deactive" );
 
         $.post({
             method: 'POST',
@@ -39,9 +39,15 @@ $(document).ready(function () {
         $( "#text-content" ).text("text3");
 
     });
-    $( "button" ).click(function() {
-        $( ".active" ).removeClass( "active" );
-        $( this ).addClass("active");
+
+    $( ".testclass" ).click(function() {
+        $( "#text-content" ).text("text3");
+
+    });
+
+
+    $( ".testclass" ).click(function() {
+        $( ".masthead" ).removeClass( "masthead-deactive" );
 
     });
 });

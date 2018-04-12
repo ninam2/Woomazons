@@ -27,7 +27,7 @@
 
 <div class="container">
 
-    <div class="masthead">
+    <div class="masthead testclass">
         <img src="../img/logo.png" alt="Logo" height="42" width="42">
         <h3 class="muted">Woomazons</h3>
     </div>
@@ -43,14 +43,12 @@
 
 
                 <div class="w3-bar w3-black">
-                    <button class="w3-bar-item w3-button" onclick="openPerson('Single')">Single</button>
+                    <button class="w3-bar-item w3-button active" onclick="openPerson('Single')">Single</button>
                     <button class="w3-bar-item w3-button" onclick="openPerson('Couple')">Couple</button>
                     <button class="w3-bar-item w3-button" onclick="openPerson('Mom')">Mom</button>
                 </div>
 
-                <div id="Single" class="w3-container w3-display-container person">
-                    <span onclick="this.parentElement.style.display='none'"
-                           lass="w3-button w3-large w3-display-topright" float-right>&times;</span>
+                <div id="Single" class="w3-container w3-display-container person ">
                     <h5>Single</h5>
                     <p>Please choose your options</p>
                     <div class="radio float-left">
@@ -58,9 +56,7 @@
                         <input type="radio" name="state" value="yp">Young Professional<br>
                         <input type="radio" name="state" value="ep">Skilled Professional
                     </div>
-                    <div class="person-image image">
-                        <img src="../img/single.png"/>
-                    </div>
+                    <img src="../img/single.png"/>
                 </div>
 
                 <div id="Couple" class="w3-container w3-display-container person" style="display:none">
@@ -72,9 +68,8 @@
                         <input type="radio" name="state" value="yp">Young Professional<br>
                         <input type="radio" name="state" value="ep">Skilled Professional
                     </div>
-                    <div class="person image float-right">
-                        <img src="../img/couple.png"/>
-                    </div>
+                    <img src="../img/couple.png"/>
+
                 </div>
 
                 <div id="Mom" class="w3-container w3-display-container person" style="display:none">
@@ -84,10 +79,8 @@
                         <input type="radio" name="state" value="ed">Full Time Mom<br>
                         <input type="radio" name="state" value="yp">Part Time Job<br>
                         <input type="radio" name="state" value="ep">Full Time Job
-                    </div>
-                    <div class="person image float-right">
-                        <img src="../img/family.png"/>
-                    </div>
+                    </div>                        <img src="../img/family.png"/>
+
                 </div>
                 <form class="w3-container">
 
@@ -120,13 +113,7 @@
         <hr>
     </div>
 </div><!-- /.navbar -->
-
-<img src="../img/woomazones.jpg" alt="Logo"  width="100%">
-
-<div class="masthead">
-    <h3 class="muted">Project name</h3>
-
-
+<div class="masthead masthead-deactive">
     <div class="w3-bar w3-black">
         <button class="w3-bar-item w3-button" id="pension-nav">Pension</button>
         <button class="w3-bar-item w3-button" id="dreams-nav">Dreams</button>
@@ -165,11 +152,8 @@
             </tbody>
         </table>
     </div>
-
-    <div class="footer">
-        <p>AS Ideas</p>
-    </div>
 </div>
+<img src="../img/woomazones.jpg" alt="Logo"  width="100%">
 
 <script>
     function openPerson(personName) {
