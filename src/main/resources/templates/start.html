@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Spring Boot Thymeleaf Hello World Example</title>
+    <title>AS Ideas Engineering - Team Woomazons</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
     <link rel="stylesheet" type="text/css"
@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/js/bootstrap-datetimepicker.min.js"></script>
 
     <link rel="stylesheet" href="../css/w3.css"/>
- <!--   <link rel="stylesheet" href="../css/main.css"/>-->
+    <!--   <link rel="stylesheet" href="../css/main.css"/>-->
     <link rel="stylesheet" href="../css/main.css"/>
 
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css"/>
@@ -32,8 +32,8 @@
     </div>
     <!-- Jumbotron -->
     <div class="jumbotron">
-        <h1>Marketing stuff!</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <h1>Wishing Well</h1>
+        <p class="lead">Find out what you can do different in order to fulfill your dreams. Compare yourself with other women in similar circumstances and learn from their experience.</p>
         <div class="w3-container">
             <div class="w3-card-4">
                 <div class="w3-container w3-green">
@@ -47,18 +47,50 @@
                         <input type="text" class="form-control " id="income" placeholder="Enter your income">
                     </div>
 
-                    <label for="size" class="col-sm-2 control-label">Size</label>
+                    <label for="period" class="col-sm-2 control-label">Income per</label>
                     <div class="col-sm-10 input">
-                        <input type="text" class="form-control " id="size" placeholder="Enter your size of family members">
+                        <select id="period" size="2">
+                            <option selected value="true">month</option>
+                            <option value="false">year</option>
+                        </select>
                     </div>
 
-                    <label for="monthly" class="col-sm-2 control-label">Size</label>
+                    <label for="size" class="col-sm-2 control-label">Household Size</label>
                     <div class="col-sm-10 input">
-                        <input type="text" class="form-control " id="monthly" placeholder="Monthly or yearly?">
+                        <input type="text" class="form-control " id="size" placeholder="Enter your number of family members">
                     </div>
+
                     <a class="btn btn-large btn-success createSubmit" href="#">Check your data</a>
 
                 </form>
+
+                <div class="w3-bar w3-black">
+                    <button class="w3-bar-item w3-button" onclick="openPerson('Single')">Single</button>
+                    <button class="w3-bar-item w3-button" onclick="openPerson('Couple')">Couple</button>
+                    <button class="w3-bar-item w3-button" onclick="openPerson('Mom')">Mom</button>
+                </div>
+
+                <div id="Single" class="w3-container w3-display-container person">
+                    <span onclick="this.parentElement.style.display='none'"
+                          class="w3-button w3-large w3-display-topright">&times;</span>
+                    <h2>Single</h2>
+                    <p>Please choose your options</p>
+                </div>
+
+                <div id="Couple" class="w3-container w3-display-container person" style="display:none">
+                    <span onclick="this.parentElement.style.display='none'"
+                          class="w3-button w3-large w3-display-topright">&times;</span>
+                    <h2>Couple</h2>
+                    <p>Please choose your options</p>
+                </div>
+
+                <div id="Mom" class="w3-container w3-display-container person" style="display:none">
+                    <span onclick="this.parentElement.style.display='none'"
+                          class="w3-button w3-large w3-display-topright">&times;</span>
+                    <h2>Mom</h2>
+                    <p>Please choose your options</p>
+                </div>
+
             </div>
         </div>
 
@@ -66,69 +98,80 @@
     </div>
 
 
-        <div class="row-fluid">
-            <div class="span4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div>
-            <div class="span4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div>
-            <div class="span4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-                <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div>
+    <div class="row-fluid">
+        <div class="span4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
-    </div><!-- /.navbar -->
-
-    <hr>
-
-    <div class="footer">
-        <p>AS Ideas</p>
+        <div class="span4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
     </div>
+</div><!-- /.navbar -->
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
+<hr>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="../img/picture1.jpg" alt="Picture1" style="width:100%;">
-                <div class="w3-container">
+<div class="footer">
+    <p>AS Ideas</p>
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="../img/picture1.jpg" alt="Picture1" style="width:100%;">
+            <div class="w3-container">
                 <div class="w3-card-4">
                     <div class="w3-container w3-green">
                         <h2>What's your income?</h2>
                     </div>
                 </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="../img/picture2.jpg" alt="Picture2" style="width:100%;">
             </div>
         </div>
 
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div class="item">
+            <img src="../img/picture2.jpg" alt="Picture2" style="width:100%;">
+        </div>
     </div>
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
 </div>
 
+<script>
+    function openPerson(personName) {
+        var i;
+        var x = document.getElementsByClassName("person");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(personName).style.display = "block";
+    }
+</script>
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="../js/bootstrap.js"></script>
 
