@@ -50,7 +50,7 @@
 
                 <div id="Single" class="w3-container w3-display-container person">
                     <span onclick="this.parentElement.style.display='none'"
-                           lass="w3-button w3-large w3-display-topright" float-right>&times;</span>
+                          lass="w3-button w3-large w3-display-topright" float-right></span>
                     <h5>Single</h5>
                     <p>Please choose your options</p>
                     <div class="radio float-left">
@@ -72,7 +72,7 @@
                         <input type="radio" name="state" value="yp">Young Professional<br>
                         <input type="radio" name="state" value="ep">Skilled Professional
                     </div>
-                    <div class="person image float-right">
+                    <div class="person-image image">
                         <img src="../img/couple.png"/>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                         <input type="radio" name="state" value="yp">Part Time Job<br>
                         <input type="radio" name="state" value="ep">Full Time Job
                     </div>
-                    <div class="person image float-right">
+                    <div class="person-image image">
                         <img src="../img/family.png"/>
                     </div>
                 </div>
@@ -126,6 +126,7 @@
 <div class="masthead">
     <h3 class="muted">Project name</h3>
 
+    <div id="resultTable"></div>
 
     <div class="w3-bar w3-black">
         <button class="w3-bar-item w3-button" id="pension-nav">Pension</button>
@@ -140,6 +141,7 @@
         <table class="table table-hover">
             <thead>
             <tr>
+                <th></th>
                 <th>Pension</th>
                 <th>Dreams</th>
                 <th>Lifestyle</th>
@@ -148,19 +150,28 @@
             </thead>
             <tbody>
             <tr>
-                <td>100</td>
-                <td>100</td>
-                <td>100</td>
-                <td>100</td>
+                <td>Actual</td>
+                <td>585</td>
+                <td>35</td>
+                <td>510</td>
+                <td>1370</td>
             </tr>
             <tr>
 
             </tr>
             <tr>
-                <td>100</td>
-                <td>100</td>
-                <td>100</td>
-                <td>100</td>
+                <td>Proposed</td>
+                <td>710</td>
+                <td>85</td>
+                <td>335</td>
+                <td>1370</td>
+            </tr>
+            <tr>
+                <td>Difference</td>
+                <td>125</td>
+                <td>50</td>
+                <td>-175</td>
+                <td>0</td>
             </tr>
             </tbody>
         </table>
@@ -170,6 +181,7 @@
         <p>AS Ideas</p>
     </div>
 </div>
+
 
 <script>
     function openPerson(personName) {
