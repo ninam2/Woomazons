@@ -48,7 +48,9 @@
                     <button class="w3-bar-item w3-button" onclick="openPerson('Mom')">Mom</button>
                 </div>
 
-                <div id="Single" class="w3-container w3-display-container person ">
+                <div id="Single" class="w3-container w3-display-container person">
+                    <span onclick="this.parentElement.style.display='none'"
+                           lass="w3-button w3-large w3-display-topright" float-right>&times;</span>
                     <h5>Single</h5>
                     <p>Please choose your options</p>
                     <div class="radio float-left">
@@ -68,8 +70,9 @@
                         <input type="radio" name="state" value="yp">Young Professional<br>
                         <input type="radio" name="state" value="ep">Skilled Professional
                     </div>
-                    <img src="../img/couple.png"/>
-
+                    <div class="person image float-right">
+                        <img src="../img/couple.png"/>
+                    </div>
                 </div>
 
                 <div id="Mom" class="w3-container w3-display-container person" style="display:none">
@@ -79,8 +82,10 @@
                         <input type="radio" name="state" value="ed">Full Time Mom<br>
                         <input type="radio" name="state" value="yp">Part Time Job<br>
                         <input type="radio" name="state" value="ep">Full Time Job
-                    </div>                        <img src="../img/family.png"/>
-
+                    </div>
+                    <div class="person image float-right">
+                        <img src="../img/family.png"/>
+                    </div>
                 </div>
                 <form class="w3-container">
 
@@ -113,7 +118,13 @@
         <hr>
     </div>
 </div><!-- /.navbar -->
-<div class="masthead masthead-deactive">
+
+<img src="../img/woomazones.jpg" alt="Logo"  width="100%">
+
+<div class="masthead">
+    <h3 class="muted">Project name</h3>
+
+
     <div class="w3-bar w3-black">
         <button class="w3-bar-item w3-button" id="pension-nav">Pension</button>
         <button class="w3-bar-item w3-button" id="dreams-nav">Dreams</button>
@@ -135,22 +146,35 @@
             </thead>
             <tbody>
             <tr>
-                <td>100</td>
-                <td>100</td>
-                <td>100</td>
-                <td>100</td>
+                <td>Actual</td>
+                <td>585</td>
+                <td>35</td>
+                <td>510</td>
+                <td>1370</td>
             </tr>
             <tr>
 
             </tr>
             <tr>
-                <td>100</td>
-                <td>100</td>
-                <td>100</td>
-                <td>100</td>
+                <td>Proposed</td>
+                <td>710</td>
+                <td>85</td>
+                <td>335</td>
+                <td>1370</td>
+            </tr>
+            <tr>
+                <td>Difference</td>
+                <td>125</td>
+                <td>50</td>
+                <td>-175</td>
+                <td>0</td>
             </tr>
             </tbody>
         </table>
+    </div>
+
+    <div class="footer">
+        <p>AS Ideas</p>
     </div>
 </div>
 <img src="../img/woomazones.jpg" alt="Logo"  width="100%">
