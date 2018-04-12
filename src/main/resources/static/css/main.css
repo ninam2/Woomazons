@@ -76,3 +76,8 @@ svg {
     border-top-style: outset;
 }
 
+
+.muted{
+    display: inline-block;
+}
+
