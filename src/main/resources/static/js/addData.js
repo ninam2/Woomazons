@@ -6,10 +6,9 @@ $(document).ready(function () {
         var income = document.getElementById("income").value;
         var size = document.getElementById("size").value;
         var monthly = document.getElementById("monthly").value;
-        console.log("test");
 
         var parameter = JSON.stringify({income:income, size:size, monthly:monthly})
-
+        $( ".masthead").css("display","active");
 
         $.post({
             method: 'POST',
@@ -41,13 +40,8 @@ $(document).ready(function () {
 
     });
     $( "button" ).click(function() {
-        $( ".active" ).removeClass( "active" )
+        $( ".active" ).removeClass( "active" );
         $( this ).addClass("active");
-
-    });
-
-    $( "#buttonSubmit" ).click(function() {
-        $( ".masthead").css("display","active");
 
     });
 });
