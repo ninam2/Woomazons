@@ -16,7 +16,7 @@ import java.util.List;
 @RestController
 public class ExampleController {
 
-    @RequestMapping(value = "/calc", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/calc", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes="application/json")
     public Result getResult(@RequestBody Input input) {
         return calculate(input.getIncome(), input.getSize(), input.isMonthly());
     }

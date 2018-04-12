@@ -8,18 +8,18 @@ $(document).ready(function () {
         var monthly = document.getElementById("monthly").value;
         console.log("test");
 
+        var parameter = JSON.stringify({income:income, size:size, monthly:monthly})
 
-        $http({
+
+        $.post({
             method: 'POST',
-            url: 'http://localhost:8080/service/v1/saveWork',
-            data: postData,
+            url: 'http://localhost:8080/calc',
+            data: parameter,
             headers: {
                 'Content-Type': 'application/json'
             }});
 
-
-
-        $.post("/calc",
+     /*   $.post("calc",
             {
                 "income":income,
                 "size": size,
@@ -27,7 +27,7 @@ $(document).ready(function () {
             },
             function (data, status) {
                 alert("Data: " + data + "\nStatus: " + status);
-            });
+            });*/
     });
 });
 
